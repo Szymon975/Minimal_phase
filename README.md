@@ -12,6 +12,6 @@ This code was provided to improve simulations of beams going through optical fil
 
 Optical transfer function (OTF) of arbitrary optical filter can be written as product of linear filter OTF and minimal phase filter OTF. The first one does not change amplitude, only phase of incoming beam, the second one changes both, the amplitude and phase in some specific way. When it comes to minimal phase filters, there is realtion between PhTF and MTF (modulus of OTF): 
 
-$$arg \left( H \left( j\omega \right) \right) \eq  -H \left{ \log \left( | *H* \left( j\omega \right) | \right)  \right}$$
+$$arg ( H ( j\omega ) ) =  -H \{ log ( | H ( j\omega ) | \)  \}$$
 
 $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
