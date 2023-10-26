@@ -56,7 +56,7 @@ This equation has some weak points, which consequences I sucessfully avoided.
 
 ![download](https://github.com/Szymon975/Minimal_phase/assets/61831227/297e743b-d127-4070-88ab-8af4f7b92dd3)
 
-Solution to this problem is different definition of variables: $$v_0 = ω/ω_0 -a, \ v' = ω/ω_0 - a, \  u_0 = log(v_0), \ u' = log(v')$$.
+Solution to this problem is different definition of variables: $v_0 = ω/ω_0 -a, \ v' = ω/ω_0 - a, \  u_0 = log(v_0), \ u' = log(v')$.
 
 In my code, we take function centered in zero and then we type in value of $a$ and obtain function adequately translated with added antisymmetric part , which gives another integral on negative $\omega$s, then we have $-v$ in arguments of differently defined $u$s.
 
