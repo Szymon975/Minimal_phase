@@ -44,7 +44,7 @@ In the next step of the article ![Bode-relation-proof]([https://github.com/Szymo
 
 after which one obtains equation proven in 1937, analysed in doctoral thesis of **Hendrik Wade Bode**.
 
-![download](https://github.com/Szymon975/Minimal_phase/assets/61831227/a44b09ad-e0d3-403d-86bd-13ba103217a9).
+![download](https://github.com/Szymon975/Minimal_phase/assets/61831227/a44b09ad-e0d3-403d-86bd-13ba103217a9)
 
 In Bode's original article ( ![Bode-relation](https://linearaudio.nl/sites/linearaudio.net/files/Bode%201940%20monograph%20gain%20and%20phase%20in%20fb%20amps%20searchable.pdf), Bode draws graphs named after him (Bode graphs) for various transfer functions using described equation.
 
