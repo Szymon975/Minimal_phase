@@ -28,5 +28,51 @@ Because Butterworth filter is (MPF), we can use use eq. 2. We can obtain similar
 
 ![Bode-relation-proof](https://github.com/Szymon975/Minimal_phase/assets/61831227/5124b39b-548a-4344-959d-648c494e4d58)
 
-There are 
+There are few reasons for troubles related to this approach:
+
+1. We are not able to integrate numerically to infinity. In ideal case, we would like to integrate to some $\omega' (\omega)$ such that integrand is negligibly small and doesn't change value with $\omega$, but it would be troublesome to implement. Deciding on constant cut-off $\omega'$, for $\omega$ approaching cut-off $\omega'$, integrand is much bigger than for small $\omega$. The result is approximately fine for $\omega$ much smaller than cut-off $\omega'$.
+
+2. Cauchy principal value is troublesome to implement. Notice that we have to neglect values of integrand in points which depend on $\omega$. There exist *hilbert* from *scipy.signal*, implementation by hand is complicated.
+
+There exists solution to all these problems. Integrating over variable $\omega'/\omega$ instead of $\omega'$ for large and constant cut-off $\omega'/\omega$, will guarantee $\omega lleq \omega'$. Secondly, after making substitution $$u = \textnormal{log}(\omega'/ \omega)$$, it turns out that one can get rid of Cauchy principal value before integral, because the neglected part of integral is measure zero. 
+
+![download](https://github.com/Szymon975/Minimal_phase/assets/61831227/02d4311b-c56f-4895-84b4-d81c7842ef57)
+
+In the next step of article ![Bode-relation-proof](https://github.com/Szymon975/Minimal_phase/assets/61831227/5124b39b-548a-4344-959d-648c494e4d58), one performs integration by parts and adding few additional assumptions on boundary terms:
+
+![download](https://github.com/Szymon975/Minimal_phase/assets/61831227/9c062d23-ccda-4c5b-90f6-471dbe22d4b7),
+
+after which one obtains equation proven in 1937, analysed in doctoral thesis of **Hendrik Wade Bode**.
+
+![download](https://github.com/Szymon975/Minimal_phase/assets/61831227/a44b09ad-e0d3-403d-86bd-13ba103217a9).
+
+In Bode's original article ( ![Bode-relation](https://linearaudio.nl/sites/linearaudio.net/files/Bode%201940%20monograph%20gain%20and%20phase%20in%20fb%20amps%20searchable.pdf), Bode draws graphs named after him (Bode graphs) for various transfer functions using described equation.
+
+This equation has some weak points, which consequences I sucessfully avoided.
+
+1. Due to the substitution $v --> \textnormal{exp}(u)$ some very big numbers are generated. Notice that we are still integrating to very big $omega'$s, with the difference that regular distribution of points $u$ in Riemann sum translates to fewer points $\omega'$ before the substitution. I had this problem only plotting *dawson* and after making use of *mpmath*, after approximately thirty seconds I obtained plot for 300 points.
+
+2. Less apparent symmetry - $$G'(v) = G(v-a)$, where "a" is some central $\omega/\omega_0$, PhTF should be translated analogously. Reason for this problem to occur is due to taking into account only positive $\omega'$s in integration because of previous change of variables - argument of logarithm must be positive.
+
+![download](https://github.com/Szymon975/Minimal_phase/assets/61831227/297e743b-d127-4070-88ab-8af4f7b92dd3)
+
+Solution to this problem is different definition of variables: $$v_0 = ω/ω_0 -a, \ v' = ω/ω_0 - a, \  u_0 = log(v_0), \ u' = log(v')$$.
+
+In my code, we take function centered in zero and then we type in value of $a$ and obtain function adequately translated with added antisymmetric part , which gives another integral on negative $\omega$s, then we have $-v$ in arguments of differently defined $u$s.
+
+Used packages:
+
+from __future__ import with_statement
+import matplotlib.pyplot as plt
+import numpy as np
+import math as m
+from mpmath import *
+from scipy.signal import hilbert
+from sympy import *
+from sympy import lambdify
+from scipy import special
+
+
+
+
 
