@@ -36,11 +36,11 @@ There are few reasons for troubles related to this approach:
 
 There exists solution to all these problems. Integrating over variable $\omega'/\omega$ instead of $\omega'$ for large and constant cut-off $\omega'/\omega$, will guarantee $\omega \ll \omega'$. Secondly, after making substitution $u = \textnormal{log}(\omega'/ \omega)$, it turns out that one can get rid of Cauchy principal value before integral, because the neglected part of integral is measure zero. 
 
-![download](https://github.com/Szymon975/Minimal_phase/assets/61831227/02d4311b-c56f-4895-84b4-d81c7842ef57)
+![wzor-5](https://github.com/Szymon975/Minimal_phase/assets/61831227/02d4311b-c56f-4895-84b4-d81c7842ef57)
 
-In the next step of article ![Bode-relation-proof](https://github.com/Szymon975/Minimal_phase/assets/61831227/5124b39b-548a-4344-959d-648c494e4d58), one performs integration by parts and adding few additional assumptions on boundary terms:
+In the next step of the article ![Bode-relation-proof](https://github.com/Szymon975/Minimal_phase/assets/61831227/5124b39b-548a-4344-959d-648c494e4d58), one performs integration by parts and adding few additional assumptions on boundary terms:
 
-![download](https://github.com/Szymon975/Minimal_phase/assets/61831227/9c062d23-ccda-4c5b-90f6-471dbe22d4b7),
+![wzor-6](https://github.com/Szymon975/Minimal_phase/assets/61831227/9c062d23-ccda-4c5b-90f6-471dbe22d4b7),
 
 after which one obtains equation proven in 1937, analysed in doctoral thesis of **Hendrik Wade Bode**.
 
