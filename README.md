@@ -38,7 +38,7 @@ There exists solution to all these problems. Integrating over variable $\omega'/
 
 ![wzor-5](https://github.com/Szymon975/Minimal_phase/assets/61831227/02d4311b-c56f-4895-84b4-d81c7842ef57)
 
-In the next step of the article ![Bode-relation-proof](https://github.com/Szymon975/Minimal_phase/assets/61831227/5124b39b-548a-4344-959d-648c494e4d58), one performs integration by parts and adding few additional assumptions on boundary terms:
+In the next step of the article ![Bode-relation-proof]([https://github.com/Szymon975/Minimal_phase/assets/61831227/5124b39b-548a-4344-959d-648c494e4d58](https://arxiv.org/abs/1107.0071)), one performs integration by parts and adding few additional assumptions on boundary terms:
 
 ![wzor-6](https://github.com/Szymon975/Minimal_phase/assets/61831227/9c062d23-ccda-4c5b-90f6-471dbe22d4b7),
 
