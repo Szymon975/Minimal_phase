@@ -64,5 +64,5 @@ In my code, we take function centered in zero and then we type in value of $a$ a
 ![Zrzut ekranu 2023-10-26 194114](https://github.com/Szymon975/Minimal_phase/assets/61831227/6de97309-67ca-400c-9906-c4747f23764e)
 
 #### Some of the results:
-![download](https://github.com/Szymon975/Minimal_phase/assets/61831227/eda74003-2f17-4472-8ed4-193e8df5f525)
+![plot-1](https://github.com/Szymon975/Minimal_phase/assets/61831227/eda74003-2f17-4472-8ed4-193e8df5f525)
 
