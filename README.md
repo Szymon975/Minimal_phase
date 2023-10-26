@@ -34,7 +34,7 @@ There are few reasons for troubles related to this approach:
 
 2. Cauchy principal value is troublesome to implement. Notice that we have to neglect values of integrand in points which depend on $\omega$. There exist *hilbert* from *scipy.signal*, implementation by hand is complicated.
 
-There exists solution to all these problems. Integrating over variable $\omega'/\omega$ instead of $\omega'$ for large and constant cut-off $\omega'/\omega$, will guarantee $\omega lleq \omega'$. Secondly, after making substitution $$u = \textnormal{log}(\omega'/ \omega)$$, it turns out that one can get rid of Cauchy principal value before integral, because the neglected part of integral is measure zero. 
+There exists solution to all these problems. Integrating over variable $\omega'/\omega$ instead of $\omega'$ for large and constant cut-off $\omega'/\omega$, will guarantee $\omega \lleq \omega'$. Secondly, after making substitution $$u = \textnormal{log}(\omega'/ \omega)$$, it turns out that one can get rid of Cauchy principal value before integral, because the neglected part of integral is measure zero. 
 
 ![download](https://github.com/Szymon975/Minimal_phase/assets/61831227/02d4311b-c56f-4895-84b4-d81c7842ef57)
 
