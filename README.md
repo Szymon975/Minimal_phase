@@ -24,7 +24,7 @@ where "p.v." stands for Cauchy principal value. What problem one might face whil
 
 As one might see on the upper picture, using the standard numerical technique generates some serious issues.
 
-Because Butterworth filter is (MPF), we can use use eq. 2. We can obtain similar equation after adding few other assumptions. I show some fragment of the article  [Bode-relation-proof]([https://github.com/Szymon975/Minimal_phase/assets/61831227/5124b39b-548a-4344-959d-648c494e4d58](https://arxiv.org/abs/1107.0071)): 
+Because Butterworth filter is (MPF), we can use use eq. 2. We can obtain similar equation after adding few other assumptions. I show some fragment of the article ![Bode-relation-proof]([https://github.com/Szymon975/Minimal_phase/assets/61831227/5124b39b-548a-4344-959d-648c494e4d58](https://arxiv.org/abs/1107.0071)): 
 
 ![wzor-7](https://github.com/Szymon975/Minimal_phase/assets/61831227/5124b39b-548a-4344-959d-648c494e4d58)
 
