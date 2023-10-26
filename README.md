@@ -14,7 +14,7 @@ Optical transfer function (OTF) of arbitrary optical filter can be written as pr
 
 ![wzor-1](https://github.com/Szymon975/Minimal_phase/assets/61831227/64f25263-e426-4c33-b1ae-6657b259777b)
 
-where "$\mathcal{H}$" stands for Hilbert transform and "$H$" is OTF. Hilbert transform is defined via equation:
+where $\mathcal{H}$ stands for Hilbert transform and $H$ is OTF. Hilbert transform is defined via equation:
 
 ![wzor-2](https://github.com/Szymon975/Minimal_phase/assets/61831227/45d238af-32a6-4bb9-a0bb-1f242a53794b),
 
