@@ -14,4 +14,4 @@ Optical transfer function (OTF) of arbitrary optical filter can be written as pr
 
 $$ \textnormal{arg} \[ H ( j \omega ) \] =  -\mathcal{H} \textnormal{"{"} \textnormal{log} ( | H ( j\omega ) | )  \textnormal{"}"} $$
 
-$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+![equation](http://www.sciweavers.org/tex2img.php?eq=1%2Bsin%28mc%5E2%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
