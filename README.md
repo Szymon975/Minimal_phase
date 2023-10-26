@@ -60,4 +60,6 @@ Solution to this problem is different definition of variables: $v_0 = ω/ω_0 -a
 
 In my code, we take function centered in zero and then we type in value of $a$ and obtain function adequately translated with added antisymmetric part , which gives another integral on negative $\omega$ s, then we have $-v$ in arguments of differently defined $u$ s.
 
+####Wykorzystane pakiety:
+![Zrzut ekranu 2023-10-26 194114](https://github.com/Szymon975/Minimal_phase/assets/61831227/6de97309-67ca-400c-9906-c4747f23764e)
 
