@@ -50,7 +50,7 @@ In Bode's original article ( ![Bode-relation](https://linearaudio.nl/sites/linea
 
 This equation has some weak points, which consequences I sucessfully avoided.
 
-1. Due to the substitution $v \rightarrow \textnormal{exp}(u)$ some very big numbers are generated. Notice that we are still integrating to very big $\omega'$s, with the difference that regular distribution of points $u$ in Riemann sum translates to fewer points $\omega'$ before the substitution. I had this problem only plotting *dawson* and after making use of *mpmath*, after approximately thirty seconds I obtained plot for 300 points.
+1. Due to the substitution $v \rightarrow \textnormal{exp}(u)$ some very big numbers are generated. Notice that we are still integrating to very big $\omega'$ s, with the difference that regular distribution of points $u$ in Riemann sum translates to fewer points $\omega'$ before the substitution. I had this problem only plotting *dawson* and after making use of *mpmath*, after approximately thirty seconds I obtained plot for 300 points.
 
 2. Less apparent symmetry - $G'(v) = G(v-a)$, where "a" is some central $\omega/\omega_0$, PhTF should be translated analogously. Reason for this problem to occur is due to taking into account only positive $\omega'$ s in integration because of previous change of variables - argument of logarithm must be positive.
 
