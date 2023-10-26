@@ -16,5 +16,5 @@ $$\arg [H(j\omega)] = - \mathcal{H} \\{ \ \log \ (| H(j \omega)| ) \ \\}$$,
 
 where $"mathcal{H}"$ stands for Hilbert transform and $"H"$ is OTF. Hilbert transform is defined via equation:
 
-$$ H(u)(t) = \frac{1}{\pi} $$. 
+$$ H(u)(t) = \frac{1}{pi} $$. 
 
